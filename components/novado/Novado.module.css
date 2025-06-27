@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.nova {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #33ccff;
+}
+
+.do {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7a5cf4;
+}

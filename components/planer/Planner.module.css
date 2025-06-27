@@ -1,0 +1,23 @@
+.inputTextPlanner {
+    display: flex;
+    padding: 16px;
+    width: 598px;
+    height: 54px;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid #0D0D0D;
+    background: #262626;
+}
+.addButton {
+    display: flex;
+    padding: 16px;
+    width: 130px;
+    height: 54px;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #1E6F9F;
+}

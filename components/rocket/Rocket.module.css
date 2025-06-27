@@ -1,0 +1,6 @@
+.rocket {
+    display: flex;
+    width: 22px;
+    height: 36px;
+    flex-shrink: 0;
+}
