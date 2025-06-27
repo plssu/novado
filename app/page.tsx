@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Novado from "@/components/novado/Novado";
 import InputField from "@/components/inputfield/InputField";
+import Planner from "@/components/planer/Planner";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
     </div>
 
     <div className={styles.planer}>
-      <InputField />
+      <Planner />
     </div>
 
     </>
