@@ -4,11 +4,12 @@ import { useState } from 'react';
 import styles from './Planner.module.css';
 import Button from '../button/Button';
 import DeleteButton from '../buttons/delete button/DeleteButton';
+import CheckBtn from '../buttons/checkbutton/CheckBtn';
 
 export default () => {
 
 const [task, setTask] = useState('');
-const [tasks, setTasks] = useState(['დავალება 1', 'დავალება 2', 'დავალება 3', 'დავალება 4', 'დავალება 5']);
+const [tasks, setTasks] = useState(['დავალება 1', 'დავალება 2']);
 
 
 const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -22,7 +23,7 @@ const onAdd = () => {
 
 return (
     <>
-    <div className={styles.container}>
+     <div className={styles.container}>
         <div className={styles.inputContainer}>
             <input
             type="text"
@@ -39,15 +40,18 @@ return (
                 <p className={styles.taskDescription}>დასრულებული</p>
             </div>
             <ul className={styles.taskList}>
-                {
-                    tasks.map(task => <li className={styles.tasks}>{task}<div><DeleteButton /></div></li>)
-                }
+                {tasks.map((task, index) => (
+                    <li className={styles.tasks}>
+                        <div className={styles.taskItem}>
+                            <CheckBtn key={index} />
+                            <span>{task}</span>
+                        </div>
+                        <DeleteButton />
+                    </li>
+                ))}
             </ul>
-
         </div>
     </div>
-    
-    
     </>
     );
 };
