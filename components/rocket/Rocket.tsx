@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './Rocket.module.css';
+import styles from './Rocket.module.scss';
 
 export default () => {
     return (

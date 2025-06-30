@@ -1,10 +1,10 @@
-'use client';
+  'use client';
 
-import Image from "next/image";
+import InputField from "@/components/inputfield/InputField";
 import styles from "./page.module.css";
 import Novado from "@/components/novado/Novado";
-import InputField from "@/components/inputfield/InputField";
-import Planner from "@/components/planer/Planner";
+import AddButton from "@/components/buttons/addbutton/AddButton";
+import Plans from "@/components/plan/Plans";
 
 export default function Home() {
   return (
@@ -14,8 +14,14 @@ export default function Home() {
       <Novado />
     </div>
 
-    <div className={styles.planer}>
-      <Planner />
+    <div className={styles.inputContainer}>
+      <div>
+        <Plans />
+      </div>
+      <div>
+        
+      </div>
+
     </div>
 
     </>

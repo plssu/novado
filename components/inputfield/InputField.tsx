@@ -1,21 +1,19 @@
 'use client';
 
+import styles from './InputField.module.scss';
 import React from 'react';
-import styles from './InputField.module.css';
 
-type InputFieldProps = {
+interface InputFieldProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+const InputField: React.FC<InputFieldProps> = ({ value, onChange }) => {
+  return (
+  <div className={styles.inputText}>
+    <input className={styles.inputField} value={value} onChange={onChange} placeholder='ცხოვრების რა ნაწილის დააგეგმვა გსურს?' />
+  </div>
+  );
 };
 
-export default function InputField({ value, onChange }: InputFieldProps) {
-  return (
-    <input
-      type="text"
-      value={value}
-      onChange={onChange}
-      className={styles.inputText}
-      placeholder="შეიყვანე დავალება"
-    />
-  );
-}
+export default InputField;

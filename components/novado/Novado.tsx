@@ -1,7 +1,7 @@
 'use client';
 
 import Rocket from '@/components/rocket/Rocket';
-import styles from './Novado.module.css';
+import styles from './Novado.module.scss';
 export default () => {
 
     return (
