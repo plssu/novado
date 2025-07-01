@@ -1,0 +1,18 @@
+@import '../color.scss';
+
+.task {
+    display: flex;
+    width: 736px;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 8px;
+    border: 1px solid $gray-400;
+    background: $gray-500;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+.deleteButton {
+    display: flex;
+    border: none;
+    background: $gray-500;
+}

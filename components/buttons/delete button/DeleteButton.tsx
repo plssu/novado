@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-import Styles from "./DeleteButton.module.css";
+import Styles from "./DeleteButton.module.scss";
 
 export default function DeleteButton() {
     const [hovered, setHovered] = useState(false);
