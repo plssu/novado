@@ -2,7 +2,7 @@
 
 import styles from './WithoutTask.module.scss';
 
-export default () => {
+const WithoutTask = () => {
     
   return (
     <>
@@ -18,13 +18,15 @@ export default () => {
         </defs>
       </svg>
     </div>
-    <div className={styles.withoutTaskText}>
-      <p className={styles.noTasks}>დავალებები ჯერ არ გაქვთ
-        </p><span className={styles.scndNoTasks}>შექმენით დავალებები და დაიწყეთ თქვენი ცხოვრების დაორგანიზება 
-        ჩვენთან ერთად</span>
-    </div>
+      <div className={styles.withoutTaskText}>
+        <p className={styles.noTasks}>დავალებები ჯერ არ გაქვთ
+          </p><span className={styles.scndNoTasks}>შექმენით დავალებები და დაიწყეთ თქვენი ცხოვრების დაორგანიზება 
+          ჩვენთან ერთად</span>
+      </div>
     </div>
     
     </>
   )
 }
+
+export default WithoutTask;

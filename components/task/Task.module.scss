@@ -1,18 +1,29 @@
 @import '../color.scss';
 
-.task {
+.taskContainer {
     display: flex;
-    width: 736px;
+    width: 100%;
     padding: 16px;
-    align-items: flex-start;
+    margin-bottom: 16px;
     gap: 12px;
     border-radius: 8px;
     border: 1px solid $gray-400;
     background: $gray-500;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 2px 8px 0px $gray-500;
 }
-.deleteButton {
+.task {
     display: flex;
-    border: none;
-    background: $gray-500;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.taskText {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.done {
+    display: flex;
+    text-decoration: line-through;
+    color: $gray-300;
 }

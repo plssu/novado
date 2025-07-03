@@ -3,18 +3,10 @@
 .inputText {
     display: flex;
     padding: 16px;
+    width: 598px;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 16px;
     border: 1px solid ;
     background: $gray-500;
     border: 1px solid $gray-700;
-}
-
-.inputField {
-    display: flex;
-    width: 598px;
-    align-items: center;
-    border: none;
-    background: $gray-500;
-    color: $gray-300;
 }
