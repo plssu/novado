@@ -4,7 +4,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background: #1A1A1A;
+    background: grey#1A1A1A;
   }
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  background: #1A1A1A;
+  background: linear-gradient(to top, #1A1A1A 60%, rgb(0, 0, 0) 40%);
 }
 
 * {
